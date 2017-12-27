@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  	<display-name>Project-6</display-name>
+  	
+  	<servlet>
+        <servlet-name>bai6</servlet-name>
+        <servlet-class>Controller.bai6</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bai6</servlet-name>
+        <url-pattern>/main</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+        <servlet-name>ReadFile</servlet-name>
+        <servlet-class>Controller.readFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadFile</servlet-name>
+        <url-pattern>/read</url-pattern>
+    </servlet-mapping>
+ 
+    <servlet>
+        <servlet-name>Print</servlet-name>
+        <servlet-class>Controller.PrintFile</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Print</servlet-name>
+        <url-pattern>/print</url-pattern>
+    </servlet-mapping>
+</web-app>
