@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Project-8</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Main</servlet-name>
+  	<servlet-class>Controller.bai8</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Main</servlet-name>
+  	<url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Index</servlet-name>
+  	<jsp-file>/index.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Index</servlet-name>
+  	<url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Insert</servlet-name>
+  	<jsp-file>/insert.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Insert</servlet-name>
+  	<url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Print</servlet-name>
+  	<jsp-file>/print.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Print</servlet-name>
+  	<url-pattern>/print</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
